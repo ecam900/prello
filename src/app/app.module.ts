@@ -11,6 +11,8 @@ import { environment } from '../environments/environment';
 
 // Firebase Imports
 import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
 
@@ -25,6 +27,8 @@ import { AngularFireModule } from '@angular/fire';
     BrowserAnimationsModule,
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
