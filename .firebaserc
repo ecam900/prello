@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "prello-210fe": {
+      "hosting": {
+        "Prello": [
+          "prello-210fe"
+        ]
+      }
+    }
+  }
+}
