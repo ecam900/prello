@@ -9,6 +9,11 @@
             </span>
         </button>
 
+        <h4>Or</h4>
+        
+
+        <app-email-login></app-email-login>
+
     </div>
     <!-- If user is already logged in. -->
     <div *ngIf="afAuth.authState | async as user" class="logout">
