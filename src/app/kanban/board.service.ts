@@ -60,11 +60,12 @@ export class BoardService {
             .collection<Board>('boards', (ref) =>
               ref.where('uid', '==', user.uid).orderBy('priority')
             )
-            .valueChanges({ ifField: 'id' });
+            .valueChanges({ idField: 'id' });
         } else {
           return [];
         }
       })
+      // map(boards => boards.sort((a, b) => a.priority - b.priority))
     );
   }
   /**
