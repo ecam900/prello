@@ -4,7 +4,7 @@ import { BoardService } from '../board.service';
 
 @Component({
   selector: 'app-task-dialog',
-  styleUrls: ['./dialog.scss'],
+  styleUrls: ['./task-dialog.component.scss'],
   template: `
     <h1 mat-dialog-title>Task</h1>
     <div mat-dialog-content class="content">
