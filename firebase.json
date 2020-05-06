@@ -1,19 +1,19 @@
 {
-  "hosting": [
-    {
-      "target": "Prello",
-      "public": "dist/Prello",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
+  "hosting": {
+    "public": "dist/Prello/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ 
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "prello",
+          "region": "us-central1" 
         }
-      ]
-    }
-  ]
+      }
+    ]
+  }
 }
